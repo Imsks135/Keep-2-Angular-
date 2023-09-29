@@ -1,0 +1,15 @@
+<h1 class="form-title">Login</h1>
+<form [formGroup]="loginForm" (ngSubmit)="loginSubmit()" class="form-box">
+    <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="username" required />
+    </mat-form-field>
+    <div class="input-gap"></div>
+    <mat-form-field appearance="outline"> 
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password" required />
+    </mat-form-field>
+    <div class="input-gap"></div> <!-- Added spacing between input fields -->
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+    <div class="error-message">{{ errorMessage }}</div>
+</form>

@@ -1,0 +1,100 @@
+/* form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(121, 118, 118);
+  } */
+
+.mat-expansion-panel {
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mat-expansion-panel-header {
+  background-color: none;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mat-expansion-panel-content {
+  padding: 16px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+button[type="submit"] {
+  align-self: flex-end;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.no-notes-message {
+  text-align: center;
+  font-size: 20px;
+  /* Adjust the font size as needed */
+  color: #757575;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.delete-button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.error-message {
+  color: red;
+  margin-top: 8px;
+}
+
+
+.login-message {
+  max-width: 600px;
+  margin: 20vh auto;
+  text-align: center;
+  font-size: 24px;
+  color: #2e3a4a;
+  line-height: 1.5;
+}
+
+.login-message {
+  background-color: wheat;
+  border: 4px solid #ccc;
+  padding: 40px;
+  text-align: center;
+  max-width: 300px;
+  margin: 100px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-message p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.login-message a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.login-message a:hover {
+  color: #0056b3;
+}

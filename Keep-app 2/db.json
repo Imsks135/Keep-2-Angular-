@@ -1,0 +1,30 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Name",
+      "content": "Satyam"
+    },
+    {
+      "id": 2,
+      "title": "Course",
+      "content": "JavaFullStack Wav2 Batch2"
+    },
+    {
+      "id": 3,
+      "title": "organisation",
+      "content": "CGI"
+    }
+  ],
+  "auth": {
+    "username": "imsks",
+    "password": "Satyam@123"
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "imsks",
+      "password": "Satyam@123"
+    }
+  ]
+}

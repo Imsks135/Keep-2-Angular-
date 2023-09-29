@@ -1,0 +1,32 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+
+  background-size: cover;
+  transform: scale(0.8);
+}
+
+.app-name {
+  display: inline-block;
+  margin-right: auto;
+  /* Add this to push the element to the left */
+}
+
+
+.mat-mdc-card-avatar {
+  margin-bottom: 0 !important;
+}

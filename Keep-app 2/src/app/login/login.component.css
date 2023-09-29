@@ -1,0 +1,60 @@
+/* Clear form title */
+.form-title {
+    text-align: center;
+    margin: 20px 0;
+    color: #2e3a4a;
+    /* Clear text color for readability */
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Centered and styled form container */
+.form-box {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 8px solid #ccc;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Center align form contents */
+}
+
+.input-gap {
+    margin: 0px 10px;
+}
+
+/* Stylish error messages */
+.error-message {
+    margin-top: 10px;
+    color: #d9534f;
+    /* Distinct color for errors */
+    font-size: 14px;
+    text-align: left;
+    border-left: 4px solid #d9534f;
+    /* Left border to indicate errors */
+    padding-left: 10px;
+}
+
+/* Additional improvements */
+
+/* Ensure accessibility and readable spacing */
+.form-box,
+.form-title {
+    padding: 20px;
+    /* Consistent padding for readability */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .form-box {
+        max-width: 90%;
+        /* Adjust the width for smaller screens */
+    }
+}
+
+/* Comments for clarity */
+/* .form-title styles the title of the form */
+/* .form-box styles the container of the form */
+/* .error-message styles error messages for user feedback */

@@ -1,0 +1,7 @@
+{
+    "/auth/v1": "/auth",
+    "/auth/v1/isAuthenticated": "/auth",
+    "/api/v1/notes": "/notes",
+    "/api/v1/notes/:id": "/notes/:id"
+  }
+  

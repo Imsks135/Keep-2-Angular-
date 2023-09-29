@@ -1,0 +1,44 @@
+<div *ngIf="authenticationService.isLoggedIn; else showLoginMessage">
+  <div class="body-color">
+
+    <mat-expansion-panel [expanded]="isNotesExpanded">
+      <mat-expansion-panel-header>
+        Take a note...
+      </mat-expansion-panel-header>
+      <form #noteForm="ngForm" (ngSubmit)="addNote()" fxLayout="column">
+        <mat-form-field>
+          <mat-label>Title here</mat-label>
+          <input matInput name="title" [(ngModel)]="newNote.title" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Text here</mat-label>
+          <textarea matInput name="text" [(ngModel)]="newNote.content" required></textarea>
+        </mat-form-field>
+        <button mat-raised-button type="submit" color="primary">Done</button>
+        <div *ngIf="errMessage" class="error-message">{{ errMessage }}</div>
+      </form>
+    </mat-expansion-panel>
+
+    <mat-grid-list cols="3" rowHeight="200px">
+      <div class="no-notes-message" *ngIf="notes.length === 0">
+        <mat-icon class="icon">note_add</mat-icon>
+        Notes you add appear here
+      </div>
+      <mat-grid-tile *ngFor="let note of notes">
+        <mat-card class="note-card">
+          <mat-card-title>{{ note.title }}</mat-card-title>
+          <mat-card-content>{{ note.content }}</mat-card-content>
+          <button (click)="deleteNote(note)" class="delete-button">
+            <mat-icon>delete</mat-icon> Delete Note
+          </button>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
+<ng-template #showLoginMessage>
+  <div class="login-message">
+    <p>log in to view your notes</p>
+    <p><a href="/login">Click here</a></p>
+  </div>
+</ng-template>
